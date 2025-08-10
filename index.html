@@ -1,1 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Malla Interactiva Facultad</title>
+<link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
 
+<h1>Malla Curricular Interactiva</h1>
+
+<div class="malla" id="malla">
+
+  <!-- Primer Año -->
+  <div class="columna" data-anio="1">
+    <div class="anio-titulo">1° Año</div>
+    <div class="cuatrimestre-titulo">Primer Cuatrimestre</div>
+    <div class="materia" data-id="Matemática Aplicada" data-correlativas="">Matemática Aplicada</div>
+    <div class="materia" data-id="Sistemas Gráficos de Expresión I" data-correlativas="">Sistemas Gráficos de Expresión I</div>
+    <div class="materia" data-id="Epistemología I" data-correlativas="">Epistemología I</div>
+    <div class="materia" data-id="Taller Integrador de Diseño I" data-correlativas="">Taller Integrador de Diseño I</div>
+
+    <div class="cuatrimestre-titulo">Segundo Cuatrimestre</div>
+    <div class="materia bloqueada" data-id="Morfología I" data-correlativas="Matemática Aplicada,Sistemas Gráficos de Expresión I">Morfología I</div>
+    <div class="materia bloqueada" data-id="Sistemas Gráficos de Expresión II" data-correlativas="Sistemas Gráficos de Expresión I">Sistemas Gráficos de Expresión II</div>
+    <div class="materia bloqueada" data-id="Introducción a la Ecología Urbana" data-correlativas="Epistemología I">Introducción a la Ecología Urbana</div>
+    <div class="materia bloqueada" data-id="Historia Crítica de la Arquitectura I - 1" data-correlativas="Taller Integrador de Diseño I">Historia Crítica de la Arquitectura I</div>
+    <div class="materia bloqueada" data-id="Taller Integrador de Diseño II - 1" data-correlativas="Taller Integrador de Diseño I">Taller Integrador de Diseño II</div>
+  </div>
+
+  <!-- Segundo Año -->
+  <div class="columna" data-anio="2">
+    <div class="anio-titulo">2° Año</div>
+    <div class="cuatrimestre-titulo">Primer Cuatrimestre</div>
+    <div class="materia bloqueada" data-id="Física Aplicada" data-correlativas="Sistemas Gráficos de Expresión II">Física Aplicada</div>
+    <div class="materia bloqueada" data-id="Tecnología de la Construcción I" data-correlativas="Morfología I">Tecnología de la Construcción I</div>
+    <div class="materia bloqueada" data-id="Instalaciones I" data-correlativas="Introducción a la Ecología Urbana">Instalaciones I</div>
+    <div class="materia bloqueada" data-id="Taller Integrador de Diseño II - 2" data-correlativas="Taller Integrador de Diseño II - 1">Taller Integrador de Diseño II</div>
+
+    <div class="cuatrimestre-titulo">Segundo Cuatrimestre</div>
+    <div class="materia bloqueada" data-id="Estructuras I" data-correlativas="Física Aplicada">Estructuras I</div>
+    <div class="materia bloqueada" data-id="Morfología II" data-correlativas="Morfología I">Morfología II</div>
+    <div class="materia bloqueada" data-id="Historia Crítica de la Arquitectura II - 1" data-correlativas="Historia Crítica de la Arquitectura I - 1">Historia Crítica de la Arquitectura II</div>
+    <div class="materia bloqueada" data-id="Taller Integrador de Diseño III - 1" data-correlativas="Taller Integrador de Diseño II - 2">Taller Integrador de Diseño III</div>
+  </div>
+
+  <!-- Tercer Año -->
+  <div class="columna" data-anio="3">
+    <div class="anio-titulo">3° Año</div>
+    <div class="cuatrimestre-titulo">Primer Cuatrimestre</div>
+    <div class="materia bloqueada" data-id="Informática" data-correlativas="Física Aplicada">Informática</div>
+    <div class="materia bloqueada" data-id="Morfología III" data-correlativas="Morfología II">Morfología III</div>
+    <div class="materia bloqueada" data-id="Historia Crítica de la Arquitectura III" data-correlativas="Historia Crítica de la Arquitectura II - 1">Historia Crítica de la Arquitectura III</div>
+    <div class="materia bloqueada" data-id="Tecnología de la Construcción II" data-correlativas="Tecnología de la Construcción I">Tecnología de la Construcción II</div>
+    <div class="materia bloqueada" data-id="Taller Integrador de Diseño IV - 1" data-correlativas="Taller Integrador de Diseño III - 1">Taller Integrador de Diseño IV</div>
+    <div class="materia bloqueada" data-id="Estructuras II" data-correlativas="Estructuras I">Estructuras II</div>
+    <div class="materia bloqueada" data-id="Instalaciones II" data-correlativas="Instalaciones I">Instalaciones II</div>
+    <div class="materia bloqueada" data-id="Urbanismo Ecológico I" data-correlativas="Morfología II,Informática">Urbanismo Ecológico I</div>
+    <div class="materia bloqueada" data-id="Arquitectura Paisajística" data-correlativas="Epistemología I,Urbanismo Ecológico I">Arquitectura Paisajística</div>
+  </div>
+
+  <!-- Cuarto Año -->
+  <div class="columna" data-anio="4">
+    <div class="anio-titulo">4° Año</div>
+    <div class="cuatrimestre-titulo">Primer Cuatrimestre</div>
+    <div class="materia bloqueada" data-id="Historia Crítica de la Arquitectura III" data-correlativas="Historia Crítica de la Arquitectura III">Historia Crítica de la Arquitectura III</div>
+    <div class="materia bloqueada" data-id="Tecnología de la Construcción III" data-correlativas="Tecnología de la Construcción II">Tecnología de la Construcción III</div>
+    <div class="materia bloqueada" data-id="Arquitectura Paisajística" data-correlativas="Urbanismo Ecológico I">Arquitectura Paisajística</div>
+    <div class="materia bloqueada" data-id="Taller Integrador de Diseño V - 1" data-correlativas="Taller Integrador de Diseño IV - 1">Taller Integrador de Diseño V</div>
+
+    <div class="cuatrimestre-titulo">Segundo Cuatrimestre</div>
+    <div class="materia bloqueada" data-id="Urbanismo Ecológico II" data-correlativas="Urbanismo Ecológico I">Urbanismo Ecológico II</div>
+    <div class="materia bloqueada" data-id="Estructuras III" data-correlativas="Estructuras II">Estructuras III</div>
+    <div class="materia bloqueada" data-id="Instalaciones III" data-correlativas="Instalaciones II">Instalaciones III</div>
+    <div class="materia bloqueada" data-id="Taller Integrador de Diseño V - 2" data-correlativas="Taller Integrador de Diseño IV - 1">Taller Integrador de Diseño V</div>
+  </div>
+
+  <!-- Quinto Año -->
+  <div class="columna" data-anio="5">
+    <div class="anio-titulo">5° Año</div>
+    <div class="cuatrimestre-titulo">Primer Cuatrimestre</div>
+    <div class="materia bloqueada" data-id="Legislación y Ejercicio Profesional" data-correlativas="Morfología III">Legislación y Ejercicio Profesional</div>
+    <div class="materia bloqueada" data-id="Evaluación del Impacto Ambiental" data-correlativas="Arquitectura Paisajística,Urbanismo Ecológico II">Evaluación del Impacto Ambiental</div>
+    <div class="materia bloqueada" data-id="Diseño del Paisaje Urbano" data-correlativas="Arquitectura Paisajística,Urbanismo Ecológico II">Diseño del Paisaje Urbano</div>
+    <div class="materia bloqueada" data-id="Taller Integrador de Diseño V" data-correlativas="Taller Integrador de Diseño V - 1,Taller Integrador de Diseño V - 2">Taller Integrador de Diseño V</div>
+
+    <div class="cuatrimestre-titulo">Segundo Cuatrimestre</div>
+    <div class="materia bloqueada" data-id="Estructuras IV" data-correlativas="Estructuras III">Estructuras IV</div>
+    <div class="materia bloqueada" data-id="Epistemología II" data-correlativas="Epistemología I,Tecnología de la Construcción III">Epistemología II</div>
+    <div class="materia bloqueada" data-id="Dirección y Práctica de Obra" data-correlativas="Tecnología de la Construcción III,Legislación y Ejercicio Profesional">Dirección y Práctica de Obra</div>
+  </div>
+
+  <!-- Sexto Año -->
+  <div class="columna" data-anio="6">
+    <div class="anio-titulo">6° Año</div>
+    <div class="materia bloqueada" data-id="Proyecto Final Integrador" data-correlativas="Estructuras IV,Epistemología II,Dirección y Práctica de Obra">Proyecto Final Integrador</div>
+    <div class="materia bloqueada" data-id="Electiva I" data-correlativas="Estructuras IV,Epistemología II,Dirección y Práctica de Obra">Electiva I</div>
+    <div class="materia bloqueada" data-id="Electiva II" data-correlativas="Estructuras IV,Epistemología II,Dirección y Práctica de Obra">Electiva II</div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
